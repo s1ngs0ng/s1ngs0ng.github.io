@@ -1,11 +1,8 @@
 ---
-title: "포스트 제목"
-categories:
-- jekyll
-tags:
-- github
--jekyll
-date:"2021-04-18 16:00"
+layout: post
+title:  "글 제목!"
+date:   2021-04-18 16:00 +0900
+categories: jekyll update
 ---
 
-우와 된다
+뭔지몰랐음
