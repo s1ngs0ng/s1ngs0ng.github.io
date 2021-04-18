@@ -1,6 +1,5 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: song 
+description: CHOI SONG Portfolio
 
 markdown: kramdown
 highlighter: rouge
@@ -13,7 +12,7 @@ plugins: [jekyll-paginate]
 
 # Details for the RSS feed generator
 url: ""
-author: "Your Name"
+author: "song"
 
 # Disqus config
 disqus-shortname: ""
