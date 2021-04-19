@@ -5,12 +5,12 @@
     <description>Blogging about stuffs</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Apr 2021 21:26:58 +0900</pubDate>
-    <lastBuildDate>Sun, 18 Apr 2021 21:26:58 +0900</lastBuildDate>
+    <pubDate>Sun, 18 Apr 2021 21:28:06 +0900</pubDate>
+    <lastBuildDate>Sun, 18 Apr 2021 21:28:06 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
-        <title>테마 적용</title>
+        <title>테스트글1</title>
         <description>&lt;h1 id=&quot;typora-test&quot;&gt;Typora test&lt;/h1&gt;
 
 &lt;p&gt;마크다운 테스트&lt;/p&gt;
