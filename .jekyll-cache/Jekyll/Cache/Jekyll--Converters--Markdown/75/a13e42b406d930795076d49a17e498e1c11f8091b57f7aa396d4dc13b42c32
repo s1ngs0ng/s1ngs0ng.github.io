@@ -1,0 +1,42 @@
+I"�<p>내용 첫줄</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>표</th>
+      <th>1</th>
+      <th>2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> 페이지 분류: (홈-소개), 프로젝트, 스터디, 기타1, 기타2
+<span class="p">-</span> layout: [main or post] // 게시물 레이아웃
+<span class="p">-</span> type: [tech or life] // 페이지 분류
+<span class="p">-</span> date: [yyyy-mm-dd HH:MM] // 글 작성 시간
+<span class="p">-</span> category // 포스트 카테고리
+<span class="p">-</span> title // 포스트 주제
+<span class="p">-</span> subtitle // 포스트 부제
+<span class="p">-</span> writer // 포스트 작성자
+<span class="p">-</span> post-header // 포스트 header 사용 여부
+<span class="p">-</span> header-img // 포스트 header 이미지
+<span class="p">-</span> hash-tag // 포스트 해시태그
+</code></pre></div></div>
+:ET

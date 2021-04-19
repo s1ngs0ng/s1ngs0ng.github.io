@@ -2,18 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <description>Blogging about stuffs</description>
+    <description>CHOI SONG Portfolio</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Apr 2021 21:28:06 +0900</pubDate>
-    <lastBuildDate>Sun, 18 Apr 2021 21:28:06 +0900</lastBuildDate>
+    <pubDate>Mon, 19 Apr 2021 23:34:48 +0900</pubDate>
+    <lastBuildDate>Mon, 19 Apr 2021 23:34:48 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
-        <title>테스트글1</title>
-        <description>&lt;h1 id=&quot;typora-test&quot;&gt;Typora test&lt;/h1&gt;
-
-&lt;p&gt;마크다운 테스트&lt;/p&gt;
+        <title>디자인 시스템을 잘 만들고 싶다면?</title>
+        <description>&lt;p&gt;내용 첫줄&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -42,17 +40,25 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;testetst&lt;/code&gt;&lt;/p&gt;
-
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; 페이지 분류: (홈-소개), 프로젝트, 스터디, 기타1, 기타2
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; layout: [main or post] // 게시물 레이아웃
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; type: [tech or life] // 페이지 분류
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; date: [yyyy-mm-dd HH:MM] // 글 작성 시간
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; category // 포스트 카테고리
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; title // 포스트 주제
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; subtitle // 포스트 부제
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; writer // 포스트 작성자
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; post-header // 포스트 header 사용 여부
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; header-img // 포스트 header 이미지
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; hash-tag // 포스트 해시태그
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Sun, 18 Apr 2021 20:29:00 +0900</pubDate>
-        <link>/cagegory1/cagegory2/2021/04/18/first.html</link>
-        <guid isPermaLink="true">/cagegory1/cagegory2/2021/04/18/first.html</guid>
+        <link>/blog/2021/04/18/first.html</link>
+        <guid isPermaLink="true">/blog/2021/04/18/first.html</guid>
         
         
-        <category>cagegory1</category>
-        
-        <category>cagegory2</category>
+        <category>Blog</category>
         
       </item>
     

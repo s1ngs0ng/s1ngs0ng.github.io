@@ -1,0 +1,13 @@
+<nav class="nav">
+    <div class="nav-container">
+      <ul>
+        {% for menu in site.data.menu %}
+        <li class="transition">
+          <a href="/{{menu.id}}" {% if current[1]== menu.id %} class="active" {% endif%}>
+            {{ menu.label }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>

@@ -1,0 +1,11 @@
+- id: Home
+  label: Home
+
+- id: Project
+  label: Project
+
+- id: Blog
+  label: Blog
+
+- id: Illust
+  label: Illust
