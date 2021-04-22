@@ -1,0 +1,34 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.nav {
+    overflow: auto;
+    padding: 28px 0;
+}
+.nav-container {
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+    max-width: 710px;
+}
+
+.nav-container ul{
+    display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.nav-container ul li{
+    display: inline-block;
+    margin: auto 40px auto 0;
+    white-space: nowrap;
+}
+.nav-container ul li a.active {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #4A4A4A;
+    font-weight: bold;
+}

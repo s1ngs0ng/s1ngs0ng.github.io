@@ -1,11 +1,11 @@
-- id: Home
+- id: 
   label: Home
 
-- id: Project
+- id: project
   label: Project
 
-- id: Blog
+- id: blog
   label: Blog
 
-- id: Illust
-  label: Illust
+- id: life
+  label: Life

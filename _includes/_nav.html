@@ -3,7 +3,7 @@
       <ul>
         {% for menu in site.data.menu %}
         <li class="transition">
-          <a href="/{{menu.id}}" {% if current[1]== menu.id %} class="active" {% endif%}>
+          <a href="/{{menu.id}}" {% if page.url contains menu.id %}class="active"{% endif %}> 
             {{ menu.label }}
           </a>
         </li>
@@ -11,3 +11,4 @@
       </ul>
     </div>
   </nav>
+

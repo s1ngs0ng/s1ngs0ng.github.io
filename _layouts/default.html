@@ -16,10 +16,10 @@
    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{'/assets/css/main.css' | relative_url}} " />
-
+    <link rel="stylesheet" type="text/css" href="{{'/assets/css/custom.css' | relative_url}} " />
 </head>
 <body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
-
+  {% include _nav.html %}
     {{ content }}
     <footer class="site-footer clearfix">
       <section class="copyright">

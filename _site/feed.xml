@@ -2,12 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <description>CHOI SONG Portfolio</description>
+    <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Apr 2021 23:59:12 +0900</pubDate>
-    <lastBuildDate>Mon, 19 Apr 2021 23:59:12 +0900</lastBuildDate>
+    <pubDate>Fri, 23 Apr 2021 00:03:31 +0900</pubDate>
+    <lastBuildDate>Fri, 23 Apr 2021 00:03:31 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Project</title>
+        <description>&lt;p&gt;##프로젝트 리스트&lt;/p&gt;
+
+&lt;p&gt;프로젝트&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Apr 2021 23:54:00 +0900</pubDate>
+        <link>/project/2021/04/20/project.html</link>
+        <guid isPermaLink="true">/project/2021/04/20/project.html</guid>
+        
+        
+        <category>Project</category>
+        
+      </item>
     
       <item>
         <title>디자인 시스템을 잘 만들고 싶다면?</title>
@@ -40,7 +55,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; 페이지 분류: (홈-소개), 프로젝트, 스터디, 기타1, 기타2
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; 페이지 분류: (홈-소개), 프로젝트, 스터디, 기타1, 기타2
 &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; layout: [main or post] // 게시물 레이아웃
 &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; type: [tech or life] // 페이지 분류
 &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; date: [yyyy-mm-dd HH:MM] // 글 작성 시간
