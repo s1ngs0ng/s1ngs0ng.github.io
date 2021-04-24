@@ -27,7 +27,7 @@ a {
     margin: auto 40px auto 0;
     white-space: nowrap;
 }
-.nav-container ul li.active {
+.nav-container ul li a.active {
     padding-bottom: 6px;
     border-bottom: 2px solid #4A4A4A;
     font-weight: bold;
