@@ -33,7 +33,6 @@
    audio:not([controls]) { display: none; height: 0; }
    [hidden], template { display: none; }
    html {
-      font-family: "Source Sans Pro","APPLE SD Gothic Neo",HelveticaNeue,Helvetica,"NanumGothic","맑은 고딕","Malgun Gothic",arial,sans-serif,"Source Sans Pro",sans-serif;
       -ms-text-size-adjust: 100%;
       -webkit-text-size-adjust: 100%;
    }
@@ -52,7 +51,7 @@
    }
    mark { background: #FF0; color: #000; }
    code, kbd, pre,
-   samp { font-family: monospace, serif; font-size: 1em; }
+   samp {font-size: 1em; }
    pre { white-space: pre-wrap; }
    q { quotes: "\201C" "\201D" "\2018" "\2019"; }
    small { font-size: 80%; }
@@ -176,7 +175,7 @@
    body {
        height: 100%;
        max-height: 100%;
-       font-family: "Source Sans Pro","APPLE SD Gothic Neo",HelveticaNeue,Helvetica,"NanumGothic","맑은 고딕","Malgun Gothic",arial,sans-serif,"Source Sans Pro",sans-serif;
+       font-family:Pretendard, -apple-system, "Apple SD Gothic Neo", 돋움, Dotum, "Helvetica Neue", arial, sans-serif;
        letter-spacing: 0;
        font-size: 1.8rem;
        line-height: 1.75em;
@@ -326,7 +325,6 @@
    
    code, tt {
        padding: 1px 3px;
-       font-family: Inconsolata, monospace, sans-serif;
        font-size: 0.85em;
        white-space: pre-wrap;
        border: #E3EDF3 1px solid;
@@ -335,18 +333,20 @@
    }
    
    pre {
+       font-family:Pretendard, -apple-system, "Apple SD Gothic Neo", 돋움, Dotum, "Helvetica Neue", arial, sans-serif;
        -moz-box-sizing: border-box;
        box-sizing: border-box;
        margin: 0 0 1.75em 0;
        border: #E3EDF3 1px solid;
        width: 100%;
        padding: 10px;
-       font-family: Inconsolata, monospace, sans-serif;
-       font-size: 0.9em;
+       font-size: 0.87em;
        white-space: pre;
        overflow: auto;
        background: #F7FAFB;
        border-radius: 3px;
+       line-height: 1.75;
+       
    }
    
    pre code, tt {
@@ -493,7 +493,6 @@
    
    .main-nav a {
        text-decoration: none;
-       font-family: 'Open Sans', sans-serif;
    }
    
    /* Create a bouncing scroll-down arrow on homepage with cover image */
@@ -665,7 +664,6 @@
        font-size: 5rem;
        letter-spacing: -1px;
        font-weight: 700;
-       font-family: "Source Sans Pro", sans-serif;
        color: #fff;
    }
    
@@ -674,7 +672,6 @@
        font-size: 2rem;
        line-height: 1.5em;
        font-weight: 400;
-       font-family: "Source Sans Pro", serif;
        letter-spacing: 0.01rem;
        color: rgba(255,255,255,0.8);
    }
@@ -767,7 +764,7 @@
    .post-meta {
        display: block;
        margin: 1.75rem 0 0 0;
-       font-family: "Source Sans Pro", sans-serif;
+       
        font-size: 1.5rem;
        line-height: 2.2rem;
        color: #9EABB3;
@@ -896,9 +893,9 @@
    /* Break out larger images to be wider than the main text column
       the class is applied with jQuery */
    .post-content .full-img {
-       width: 126%;
+       width: 100%;
        max-width: none;
-       margin: 0 -13%;
+       /* margin: 0 -13%; */
    }
    
    /* The author credit area after the post */
@@ -1167,7 +1164,6 @@
    /* Location, website, and link */
    .author-profile .author-meta {
        margin: 2rem 0;
-       font-family: "Source Sans Pro", serif;
        letter-spacing: 0.01rem;
        font-size: 1.7rem;
    }
@@ -1211,7 +1207,7 @@
        width: 80%;
        max-width: 710px;
        margin: 4rem auto;
-       font-family: "Source Sans Pro", sans-serif;
+       
        font-size: 1.3rem;
        color: #9EABB3;
        text-align: center;
@@ -1298,7 +1294,7 @@
        margin: 8rem 0 0 0;
        padding: 0.5rem 15px;
        border-top: #EBF2F6 1px solid;
-       font-family: "Source Sans Pro", sans-serif;
+       
        font-size: 1rem;
        line-height: 1.75em;
        color: #BBC7CC;

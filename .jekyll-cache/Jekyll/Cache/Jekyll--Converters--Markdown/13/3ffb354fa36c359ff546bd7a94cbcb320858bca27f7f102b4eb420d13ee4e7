@@ -1,0 +1,194 @@
+I"><p>Lottie 활용</p>
+
+<h3 id="기획-내용">기획 내용</h3>
+
+<p>유저 참여 유도 - 기사 리스트 아래 리액션 <strong>선택 영역 추가</strong></p>
+
+<p>Type 1 : 이슈성 평가  / Type 2 : 찬반 택일</p>
+
+<h3 id="디자인">디자인</h3>
+
+<div class="d-grid">
+
+![이슈성 평가 디자인](/assets/images/20220219-1.png){:class="img-responsive"}
+
+![찬반 택일 디자인](/assets/images/20220219-2.png){:class="img-responsive"}
+
+</div>
+<p>선택 시 모션 1회 발생</p>
+
+<p>→ 기존에 사용했던 GIF 대신 <strong>Lottie 라이브러리 적용</strong></p>
+
+<h3 id="lottie-란">Lottie 란?</h3>
+
+<p>Airbnb가 공개한 애니메이션 라이브러리</p>
+
+<p>웹에서도 보다 가볍게 애니메이션 파일을 불러 올 수 있고, 다양한 플랫폼에 대응이 잘된다.</p>
+
+<p>뉴스픽은 사이트내에 다양한 스크립트와 iframe 광고가 많기때문에 <strong>리소스의 경량화</strong>가 중요하다.</p>
+
+<p>따라서 gif보다 가벼운 lottie 라이브러리를 선택했다.</p>
+
+<p><a href="https://lottiefiles.com/">Free Lottie Animation Files, Tools &amp; Plugins - LottieFiles</a></p>
+
+<ol>
+  <li>lottie.js</li>
+</ol>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="p">=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"</span> <span class="na">integrity</span><span class="p">=</span><span class="s">"sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA=="</span> <span class="na">crossorigin</span><span class="p">=</span><span class="s">"anonymous"</span> <span class="na">referrerpolicy</span><span class="p">=</span><span class="s">"no-referrer"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div></div>
+
+<p>CDN을 통해 lottie.min.js 를 불러온다.</p>
+
+<ol>
+  <li>Mark up</li>
+</ol>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"brick_item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"txt_center"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"box_tit issue_title"</span><span class="nt">&gt;</span>놀라운 소식인가요?<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"issue_box"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"issue_item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"emotion1"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"emotion1"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"emotion"</span><span class="nt">&gt;&lt;/i&gt;</span> 
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"emotion_txt"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"issue_item opposite"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"emotion2"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"emotion2"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"emotion"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"emotion_txt"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"count"</span><span class="nt">&gt;</span>62<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"issue_item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"emotion3"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"emotion3"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"emotion"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"emotion_txt"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"count"</span><span class="nt">&gt;</span>999+<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Script</li>
+</ol>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">bodymovin</span><span class="p">.</span><span class="nx">loadAnimation</span><span class="p">({</span>
+    <span class="na">container</span><span class="p">:</span> <span class="nx">issueList</span><span class="p">[</span><span class="nx">n</span><span class="p">],</span>
+    <span class="na">render</span><span class="p">:</span> <span class="dl">"</span><span class="s2">svg</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">loop</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="na">autoplay</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="na">path</span><span class="p">:</span> <span class="nx">pathAndText</span><span class="p">[</span><span class="nx">index</span><span class="p">].</span><span class="nx">path</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>json 파일</p>
+
+    <p><img src="/assets/images/20220219-3.png" alt="lottie json 파일 다운로드 위치" /></p>
+  </li>
+</ol>
+
+<p>이미 작업되어있는 리소스를 가져오는 경우 ‘Download - Lottie JSON’ 에서 파일을 다운받을 수 있다.</p>
+
+<ul>
+  <li>
+    <p>퍼블리싱 된 화면</p>
+
+    <p><a href="/assets/images/20220219-4.mov">lottie 이슈성 평가 디자인 적용</a></p>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="문제점">❌ 문제점</h3>
+
+<p><a href="/assets/images/20220219-5.mov">문제점 이미지</a></p>
+
+<p>사용하려고하는 리소스의 애니메이션이 이미지가 없는 상태로 시작이 된다면</p>
+
+<p>미선택시 비어있는 상태로 보여진다.</p>
+
+<hr />
+
+<h3 id="️-해결방법-2가지">⭕️ 해결방법 2가지</h3>
+
+<p>1) After effect에서 직접 모션을 수정한다.</p>
+
+<p>2) 미 선택시 디폴트 이미지를 넣어준다.</p>
+
+<h3 id="1-after-effect에서-직접-모션을-수정한다">1) After effect에서 직접 모션을 수정한다.</h3>
+
+<ul>
+  <li>플러그인 설치
+    <ol>
+      <li><strong>**ZXP installer</strong>**</li>
+    </ol>
+  </li>
+</ul>
+
+<p><a href="https://aescripts.com/learn/zxp-installer/">ZXP Installer</a></p>
+
+<ol>
+  <li><strong>**bodymovin</strong>**</li>
+</ol>
+
+<p><a href="https://github.com/airbnb/lottie-web/tree/master/build/extension">lottie-web/build/extension at master · airbnb/lottie-web</a></p>
+
+<ul>
+  <li>
+    <p>에펙 extension에서 <strong>**bodymovin을 통해 lottie를 import 할 수 있다.</strong>**</p>
+
+    <p><img src="/assets/images/20220219-6.png" alt="스크린샷 2022-02-14 오후 4.53.46.png" /></p>
+  </li>
+  <li>
+    <p>compositon 내에 scale keyframe 통해 앞 부분에 디폴트 이미지를 추가한다.</p>
+
+    <p><a href="/assets/images/20220219-7.mov">화면 기록 2022-02-14 오후 4.57.04.mov</a></p>
+  </li>
+  <li>작업 후 <strong>**bodymovin으로 json 파일로 저장 할 수 있다.</strong>**</li>
+  <li>
+    <p>‘lottie - upload animation’ 에 json 파일을 올리면 수정된 리소스가 올라가며 기존과 동일한 방법으로 사용할 수 있다.</p>
+
+    <p><img src="/assets/images/20220219-8.png" alt="스크린샷 2022-02-14 오후 5.01.00.png" /></p>
+  </li>
+</ul>
+
+<p>2) 디폴트 이미지를 넣어준다.</p>
+
+<p>After effect 사용 방법을 모른다면 css 로 해결 할 수 있다.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.issue_item.opposite</span> <span class="nt">label</span> <span class="nt">i</span> <span class="p">{</span>
+    <span class="nl">background-size</span><span class="p">:</span> <span class="n">contain</span><span class="p">;</span>
+    <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url(data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 130' width='130' height='130' preserveAspectRatio='xMidYMid meet' style='width: 100%25;height: 100%25;transform: translate3d(0px, 0px, 0px)</span><span class="p">;</span><span class="py">content-visibility</span><span class="p">:</span> <span class="nb">visible</span><span class="p">;</span><span class="err">'%3e%3cdefs%3e%3cclipPath</span> <span class="err">id='__lottie_element_25'%3e%3crect</span> <span class="err">width='130'</span> <span class="err">height='130'</span> <span class="err">x='0'</span> <span class="err">y='0'%3e%3c/rect%3e%3c/clipPath%3e%3c/defs%3e%3cg</span> <span class="err">clip-path='url(%23__lottie_element_25)'%3e%3cg</span> <span class="err">transform='matrix(1.2992480993270874,0,0,1.2992480993270874,65,65)'</span> <span class="err">opacity='0.0001147…'</span> <span class="err">style='</span><span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span><span class="err">'%3e%3cg</span> <span class="err">opacity='1'</span> <span class="err">transform='matrix(1,0,0,1,0,0)'%3e%3cpath</span> <span class="err">stroke-linecap='butt'</span> <span class="err">stroke-linejoin='miter'</span> <span class="err">fill-opacity='0'</span> <span class="err">stroke-miterlimit='4'</span> <span class="err">stroke='rgb(246,92,95)'</span> <span class="err">stroke-opacity='1'</span> <span class="err">stroke-width='4'</span> <span class="err">d='</span> <span class="err">M0,-48</span> <span class="err">C26.491199493408203,-48</span> <span class="err">48,-26.491199493408203</span> <span class="err">48,0</span> <span class="err">C48,26.491199493408203</span> <span class="err">26.491199493408203,48</span> <span class="err">0,48</span> <span class="err">C-26.491199493408203,48</span> <span class="err">-48,26.491199493408203</span> <span class="err">-48,0</span> <span class="err">C-48,-26.491199493408203</span> <span class="err">-26.491199493408203,-48</span> <span class="err">0,-48z'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3cg</span> <span class="err">style='</span><span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span><span class="err">'</span> <span class="err">transform='matrix(1,0,0,1,65,65)'</span> <span class="err">opacity='0.9999993388087568'%3e%3cg</span> <span class="err">opacity='1'</span> <span class="err">transform='matrix(1,0,0,1,0,0)'%3e%3cpath</span> <span class="err">fill='rgb(253,92,92)'</span> <span class="err">fill-opacity='1'</span> <span class="err">d='</span> <span class="err">M0,-48</span> <span class="err">C26.491199493408203,-48</span> <span class="err">48,-26.491199493408203</span> <span class="err">48,0</span> <span class="err">C48,26.491199493408203</span> <span class="err">26.491199493408203,48</span> <span class="err">0,48</span> <span class="err">C-26.491199493408203,48</span> <span class="err">-48,26.491199493408203</span> <span class="err">-48,0</span> <span class="err">C-48,-26.491199493408203</span> <span class="err">-26.491199493408203,-48</span> <span class="err">0,-48z'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3cg</span> <span class="err">style='</span><span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span><span class="err">'</span> <span class="err">transform='matrix(0.8771700263023376,0,0,0.8771700263023376,55.35101318359375,52.28131103515625)'</span> <span class="err">opacity='1'%3e%3cg</span> <span class="err">opacity='1'</span> <span class="err">transform='matrix(1,0,0,1,0,0)'%3e%3cpath</span> <span class="err">stroke-linecap='round'</span> <span class="err">stroke-linejoin='round'</span> <span class="err">fill-opacity='0'</span> <span class="err">stroke='rgb(255,255,255)'</span> <span class="err">stroke-opacity='1'</span> <span class="err">stroke-width='6.091'</span> <span class="err">d='</span> <span class="err">M24.18000030517578,0</span> <span class="err">C24.18000030517578,0</span> <span class="err">0,25.520000457763672</span> <span class="err">0,25.520000457763672'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3cg</span> <span class="err">style='</span><span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span><span class="err">'</span> <span class="err">transform='matrix(0,0.8771700263023376,-0.8771700263023376,0,77.14868927001953,52.869014739990234)'</span> <span class="err">opacity='1'%3e%3cg</span> <span class="err">opacity='1'</span> <span class="err">transform='matrix(1,0,0,1,0,0)'%3e%3cpath</span> <span class="err">stroke-linecap='round'</span> <span class="err">stroke-linejoin='round'</span> <span class="err">fill-opacity='0'</span> <span class="err">stroke='rgb(255,255,255)'</span> <span class="err">stroke-opacity='1'</span> <span class="err">stroke-width='6.091'</span> <span class="err">d='</span> <span class="err">M24.18000030517578,0</span> <span class="err">C24.18000030517578,0</span> <span class="err">0,25.520000457763672</span> <span class="err">0,25.520000457763672'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e);</span>
+<span class="p">}</span>
+
+<span class="nc">.issue_item.opposite</span> <span class="nt">label</span><span class="nc">.on</span> <span class="nt">i</span> <span class="p">{</span>
+    <span class="nl">background-image</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>class 를 사용하여 미 선택(애니메이션 동작 x)일 때 잠깐 background image로 보여주고</p>
+
+<p>선택이 되면(.on 추가) 이미지를 가리고 애니메이션을 보여준다.</p>
+
+<h3 id="적용-화면">적용 화면</h3>
+
+<p><a href="/assets/images/20220219-9.mov">화면 기록 2022-02-14 오후 5.17.42.mov</a></p>
+
+<h3 id="서비스-적용-확인">서비스 적용 확인!</h3>
+
+<p><a href="http://m.newspic.kr/issueKeyword?no=1913&amp;nid=2022021409273470328&amp;pn=214">ITZY 예지, 리아 코로나 확진</a></p>
+
+<p>소스 참고</p>
+
+<p><a href="https://jsfiddle.net/szdjy5fp/16/">JSFiddle</a></p>
+:ET

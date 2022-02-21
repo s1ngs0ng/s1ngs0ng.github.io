@@ -9,6 +9,16 @@ a {
 .nav {
     overflow: auto;
     padding: 28px 0;
+    width: 100%;
+    background: #fff;
+}
+.nav-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-bottom:1px solid #ddd;
 }
 .nav-container {
     margin: 0 auto;
@@ -31,4 +41,12 @@ a {
     padding-bottom: 6px;
     border-bottom: 2px solid #4A4A4A;
     font-weight: bold;
+}
+/* column */
+.d-grid{
+    display: grid;
+}
+.column-2{
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
 }

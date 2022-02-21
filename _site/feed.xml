@@ -5,8 +5,8 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Feb 2022 00:59:55 +0900</pubDate>
-    <lastBuildDate>Sun, 20 Feb 2022 00:59:55 +0900</lastBuildDate>
+    <pubDate>Mon, 21 Feb 2022 23:27:27 +0900</pubDate>
+    <lastBuildDate>Mon, 21 Feb 2022 23:27:27 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -20,11 +20,14 @@
 &lt;p&gt;Type 1 : 이슈성 평가  / Type 2 : 찬반 택일&lt;/p&gt;
 
 &lt;h3 id=&quot;디자인&quot;&gt;디자인&lt;/h3&gt;
+&lt;!-- ![이슈성 평가 디자인](/assets/images/20220219-1.png){:class=&quot;img-responsive&quot;}
 
-&lt;p&gt;&lt;img src=&quot;Lottie%20%E1%84%85%E1%85%A1%E1%84%8B%2041ca0/IMG_1214.png&quot; alt=&quot;IMG_1214.PNG&quot; /&gt;&lt;/p&gt;
+![찬반 택일 디자인](/assets/images/20220219-2.png){:class=&quot;img-responsive&quot;} --&gt;
 
-&lt;p&gt;&lt;img src=&quot;Lottie%20%E1%84%85%E1%85%A1%E1%84%8B%2041ca0/IMG_1215.png&quot; alt=&quot;IMG_1215.PNG&quot; /&gt;&lt;/p&gt;
-
+&lt;div class=&quot;d-grid column-2&quot;&gt;
+  &lt;img src=&quot;/assets/images/20220219-1.png&quot; alt=&quot;이슈성 평가 디자인&quot; /&gt;
+  &lt;img src=&quot;/assets/images/20220219-2.png&quot; alt=&quot;찬반 택일 디자인&quot; /&gt;
+&lt;/div&gt;
 &lt;p&gt;선택 시 모션 1회 발생&lt;/p&gt;
 
 &lt;p&gt;→ 기존에 사용했던 GIF 대신 &lt;strong&gt;Lottie 라이브러리 적용&lt;/strong&gt;&lt;/p&gt;
@@ -45,7 +48,7 @@
   &lt;li&gt;lottie.js&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;language-jsx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;integrity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA==&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;crossorigin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;anonymous&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;referrerpolicy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;no-referrer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-jsx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;integrity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA==&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;crossorigin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;anonymous&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;referrerpolicy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;no-referrer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;CDN을 통해 lottie.min.js 를 불러온다.&lt;/p&gt;
@@ -54,7 +57,7 @@
   &lt;li&gt;Mark up&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;brick_item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;brick_item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;txt_center&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;box_tit issue_title&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;놀라운 소식인가요?&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;issue_box&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
@@ -90,7 +93,7 @@
   &lt;li&gt;Script&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;language-jsx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;bodymovin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loadAnimation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+&lt;div class=&quot;language-jsx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;bodymovin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loadAnimation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
     &lt;span class=&quot;na&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;issueList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
     &lt;span class=&quot;na&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;svg&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;na&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
@@ -103,7 +106,7 @@
   &lt;li&gt;
     &lt;p&gt;json 파일&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;Lottie%20%E1%84%85%E1%85%A1%E1%84%8B%2041ca0/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-02-14_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.29.39.png&quot; alt=&quot;스크린샷 2022-02-14 오후 4.29.39.png&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/20220219-3.png&quot; alt=&quot;lottie json 파일 다운로드 위치&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -113,7 +116,7 @@
   &lt;li&gt;
     &lt;p&gt;퍼블리싱 된 화면&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;Lottie%20%E1%84%85%E1%85%A1%E1%84%8B%2041ca0/%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_2022-02-14_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.36.00.mov&quot;&gt;화면 기록 2022-02-14 오후 4.36.00.mov&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/assets/images/20220219-4.mov&quot;&gt;lottie 이슈성 평가 디자인 적용&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -121,7 +124,7 @@
 
 &lt;h3 id=&quot;문제점&quot;&gt;❌ 문제점&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;Lottie%20%E1%84%85%E1%85%A1%E1%84%8B%2041ca0/%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_2022-02-14_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.39.11.mov&quot;&gt;화면 기록 2022-02-14 오후 4.39.11.mov&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/images/20220219-5.mov&quot;&gt;문제점 이미지&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;사용하려고하는 리소스의 애니메이션이 이미지가 없는 상태로 시작이 된다면&lt;/p&gt;
 
@@ -157,18 +160,18 @@
   &lt;li&gt;
     &lt;p&gt;에펙 extension에서 &lt;strong&gt;**bodymovin을 통해 lottie를 import 할 수 있다.&lt;/strong&gt;**&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;Lottie%20%E1%84%85%E1%85%A1%E1%84%8B%2041ca0/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-02-14_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.53.46.png&quot; alt=&quot;스크린샷 2022-02-14 오후 4.53.46.png&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/20220219-6.png&quot; alt=&quot;스크린샷 2022-02-14 오후 4.53.46.png&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;compositon 내에 scale keyframe 통해 앞 부분에 디폴트 이미지를 추가한다.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;Lottie%20%E1%84%85%E1%85%A1%E1%84%8B%2041ca0/%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_2022-02-14_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.57.04.mov&quot;&gt;화면 기록 2022-02-14 오후 4.57.04.mov&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/assets/images/20220219-7.mov&quot;&gt;화면 기록 2022-02-14 오후 4.57.04.mov&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;작업 후 &lt;strong&gt;**bodymovin으로 json 파일로 저장 할 수 있다.&lt;/strong&gt;**&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;‘lottie - upload animation’ 에 json 파일을 올리면 수정된 리소스가 올라가며 기존과 동일한 방법으로 사용할 수 있다.&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;Lottie%20%E1%84%85%E1%85%A1%E1%84%8B%2041ca0/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-02-14_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.01.00.png&quot; alt=&quot;스크린샷 2022-02-14 오후 5.01.00.png&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/20220219-8.png&quot; alt=&quot;스크린샷 2022-02-14 오후 5.01.00.png&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -176,7 +179,7 @@
 
 &lt;p&gt;After effect 사용 방법을 모른다면 css 로 해결 할 수 있다.&lt;/p&gt;
 
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.issue_item.opposite&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.issue_item.opposite&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;background-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;background-image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(data:image/svg+xml;charset=UTF-8,%3csvg xmlns=&apos;http://www.w3.org/2000/svg&apos; viewBox=&apos;0 0 130 130&apos; width=&apos;130&apos; height=&apos;130&apos; preserveAspectRatio=&apos;xMidYMid meet&apos; style=&apos;width: 100%25;height: 100%25;transform: translate3d(0px, 0px, 0px)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;content-visibility&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;visible&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&apos;%3e%3cdefs%3e%3cclipPath&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;id=&apos;__lottie_element_25&apos;%3e%3crect&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;width=&apos;130&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;height=&apos;130&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;x=&apos;0&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;y=&apos;0&apos;%3e%3c/rect%3e%3c/clipPath%3e%3c/defs%3e%3cg&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;clip-path=&apos;url(%23__lottie_element_25)&apos;%3e%3cg&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;transform=&apos;matrix(1.2992480993270874,0,0,1.2992480993270874,65,65)&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;opacity=&apos;0.0001147…&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;style=&apos;&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&apos;%3e%3cg&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;opacity=&apos;1&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;transform=&apos;matrix(1,0,0,1,0,0)&apos;%3e%3cpath&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;stroke-linecap=&apos;butt&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;stroke-linejoin=&apos;miter&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;fill-opacity=&apos;0&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;stroke-miterlimit=&apos;4&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;stroke=&apos;rgb(246,92,95)&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;stroke-opacity=&apos;1&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;stroke-width=&apos;4&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;d=&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;M0,-48&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;C26.491199493408203,-48&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;48,-26.491199493408203&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;48,0&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;C48,26.491199493408203&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;26.491199493408203,48&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;0,48&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;C-26.491199493408203,48&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;-48,26.491199493408203&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;-48,0&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;C-48,-26.491199493408203&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;-26.491199493408203,-48&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;0,-48z&apos;%3e%3c/path%3e%3c/g%3e%3c/g%3e%3cg&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;style=&apos;&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;transform=&apos;matrix(1,0,0,1,65,65)&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;opacity=&apos;0.9999993388087568&apos;%3e%3cg&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;opacity=&apos;1&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;transform=&apos;matrix(1,0,0,1,0,0)&apos;%3e%3cpath&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;fill=&apos;rgb(253,92,92)&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;fill-opacity=&apos;1&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;d=&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;M0,-48&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;C26.491199493408203,-48&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;48,-26.491199493408203&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;48,0&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;C48,26.491199493408203&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;26.491199493408203,48&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;0,48&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;C-26.491199493408203,48&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;-48,26.491199493408203&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;-48,0&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;C-48,-26.491199493408203&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;-26.491199493408203,-48&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;0,-48z&apos;%3e%3c/path%3e%3c/g%3e%3c/g%3e%3cg&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;style=&apos;&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;transform=&apos;matrix(0.8771700263023376,0,0,0.8771700263023376,55.35101318359375,52.28131103515625)&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;opacity=&apos;1&apos;%3e%3cg&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;opacity=&apos;1&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;transform=&apos;matrix(1,0,0,1,0,0)&apos;%3e%3cpath&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;stroke-linecap=&apos;round&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;stroke-linejoin=&apos;round&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;fill-opacity=&apos;0&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;stroke=&apos;rgb(255,255,255)&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;stroke-opacity=&apos;1&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;stroke-width=&apos;6.091&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;d=&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;M24.18000030517578,0&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;C24.18000030517578,0&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;0,25.520000457763672&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;0,25.520000457763672&apos;%3e%3c/path%3e%3c/g%3e%3c/g%3e%3cg&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;style=&apos;&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;transform=&apos;matrix(0,0.8771700263023376,-0.8771700263023376,0,77.14868927001953,52.869014739990234)&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;opacity=&apos;1&apos;%3e%3cg&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;opacity=&apos;1&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;transform=&apos;matrix(1,0,0,1,0,0)&apos;%3e%3cpath&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;stroke-linecap=&apos;round&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;stroke-linejoin=&apos;round&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;fill-opacity=&apos;0&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;stroke=&apos;rgb(255,255,255)&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;stroke-opacity=&apos;1&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;stroke-width=&apos;6.091&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;d=&apos;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;M24.18000030517578,0&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;C24.18000030517578,0&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;0,25.520000457763672&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;0,25.520000457763672&apos;%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
@@ -192,7 +195,7 @@
 
 &lt;h3 id=&quot;적용-화면&quot;&gt;적용 화면&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;Lottie%20%E1%84%85%E1%85%A1%E1%84%8B%2041ca0/%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_2022-02-14_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.17.42.mov&quot;&gt;화면 기록 2022-02-14 오후 5.17.42.mov&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/images/20220219-9.mov&quot;&gt;화면 기록 2022-02-14 오후 5.17.42.mov&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;서비스-적용-확인&quot;&gt;서비스 적용 확인!&lt;/h3&gt;
 
@@ -203,8 +206,8 @@
 &lt;p&gt;&lt;a href=&quot;https://jsfiddle.net/szdjy5fp/16/&quot;&gt;JSFiddle&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 19 Feb 2022 11:23:00 +0900</pubDate>
-        <link>/blog/lottie.html</link>
-        <guid isPermaLink="true">/blog/lottie.html</guid>
+        <link>/blog/2022/02/19/lottie.html</link>
+        <guid isPermaLink="true">/blog/2022/02/19/lottie.html</guid>
         
         
         <category>blog</category>
@@ -218,8 +221,8 @@
 &lt;p&gt;프로젝트&lt;/p&gt;
 </description>
         <pubDate>Tue, 20 Apr 2021 23:54:00 +0900</pubDate>
-        <link>/project/project.html</link>
-        <guid isPermaLink="true">/project/project.html</guid>
+        <link>/project/2021/04/20/project.html</link>
+        <guid isPermaLink="true">/project/2021/04/20/project.html</guid>
         
         
         <category>project</category>
@@ -257,7 +260,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;syntax&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; 페이지 분류: (홈-소개), 프로젝트, 스터디, 기타1, 기타2
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; 페이지 분류: (홈-소개), 프로젝트, 스터디, 기타1, 기타2
 &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; layout: [main or post] // 게시물 레이아웃
 &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; type: [tech or life] // 페이지 분류
 &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; date: [yyyy-mm-dd HH:MM] // 글 작성 시간
@@ -271,8 +274,8 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Sun, 18 Apr 2021 20:29:00 +0900</pubDate>
-        <link>/blog/first.html</link>
-        <guid isPermaLink="true">/blog/first.html</guid>
+        <link>/blog/2021/04/18/first.html</link>
+        <guid isPermaLink="true">/blog/2021/04/18/first.html</guid>
         
         
         <category>blog</category>

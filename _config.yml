@@ -1,0 +1,28 @@
+name: SONG 
+description: 
+
+markdown: kramdown
+highlighter: rouge
+logo: false
+paginate: 15
+baseurl: ""
+domain_name: "https://s1ngs0ng.github.io"
+google_analytics: "UA-XXXXXXXX-X"
+plugins: [jekyll-paginate]
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class   : 'syntax'
+
+# Details for the RSS feed generator
+url: ""
+author: "song"
+
+# Disqus config
+disqus-shortname: ""
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true

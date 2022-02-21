@@ -1,4 +1,4 @@
-I"�<p>내용 첫줄</p>
+I"�<p>내용 첫줄</p>
 
 <table>
   <thead>
@@ -27,7 +27,7 @@
   </tbody>
 </table>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="syntax"><code><span class="p">-</span> 페이지 분류: (홈-소개), 프로젝트, 스터디, 기타1, 기타2
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> 페이지 분류: (홈-소개), 프로젝트, 스터디, 기타1, 기타2
 <span class="p">-</span> layout: [main or post] // 게시물 레이아웃
 <span class="p">-</span> type: [tech or life] // 페이지 분류
 <span class="p">-</span> date: [yyyy-mm-dd HH:MM] // 글 작성 시간
