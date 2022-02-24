@@ -63,7 +63,7 @@
    }
    sup { top: -0.5em; }
    sub { bottom: -0.25em; }
-   img { border: 0; }
+   img { border: 0; width:100% ;height: auto; }
    svg:not(:root) { overflow: hidden; }
    figure { margin: 0; }
    fieldset {
@@ -96,8 +96,7 @@
    input::-moz-focus-inner { border: 0; padding: 0; }
    textarea { overflow: auto; vertical-align: top; }
    table { border-collapse: collapse; border-spacing: 0; }
-   
-   
+ 
    /* ==========================================================================
       1. Icons - Sets up the icon font and respective classes
       ========================================================================== */
@@ -177,8 +176,8 @@
        max-height: 100%;
        font-family:Pretendard, -apple-system, "Apple SD Gothic Neo", 돋움, Dotum, "Helvetica Neue", arial, sans-serif;
        letter-spacing: 0;
-       font-size: 1.8rem;
-       line-height: 1.75em;
+       font-size: 1.65rem;
+       line-height: 2em;
        color: #3A4145;
        -webkit-font-feature-settings: 'kern' 1;
        -moz-font-feature-settings: 'kern' 1;
@@ -207,7 +206,6 @@
    h1 {
        font-size: 5rem;
        letter-spacing: -2px;
-       text-indent: -3px;
    }
    
    h2 {
@@ -244,7 +242,7 @@
        -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
        -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
        -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
-       margin: 0 0 1.75em 0;
+       margin: 0;
    }
    
    ol, ul {
@@ -713,8 +711,8 @@
    /* Every post, on every page, gets this style on its <article> tag */
    .post {
        position: relative;
-       width: 80%;
-       max-width: 710px;
+       width: calc(100% - 40px);
+       max-width: 1200px;
        margin: 4rem auto;
        padding-bottom: 4rem;
        border-bottom: #EBF2F6 1px solid;
@@ -742,7 +740,7 @@
    }
    
    body:not(.post-template) .post-title {
-       font-size: 2.8rem;
+       font-size: 3.6rem;
        letter-spacing: -0.009em;
        word-break: keep-all;
    }
@@ -763,9 +761,7 @@
    
    .post-meta {
        display: block;
-       margin: 1.75rem 0 0 0;
-       
-       font-size: 1.5rem;
+    font-size: 1.5rem;
        line-height: 2.2rem;
        color: #9EABB3;
    }
@@ -795,14 +791,14 @@
    
    .post-date {
        display: inline-block;
-       margin-left: 8px;
-       padding-left: 12px;
-       border-left: #d5dbde 1px solid;
        text-transform: uppercase;
        font-size: 1.3rem;
        white-space: nowrap;
    }
-   
+   .post-cate{
+       margin-bottom:.4em;
+       color: #ff9800;
+   }
    .user-image {
        position: absolute;
        top: 0;
@@ -1388,7 +1384,6 @@
    
        h1 {
            font-size: 4.5rem;
-           text-indent: -2px;
        }
    
        h2 {

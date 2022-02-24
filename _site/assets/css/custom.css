@@ -6,6 +6,7 @@ ul {
 a {
     text-decoration: none;
 }
+
 .nav {
     overflow: auto;
     padding: 28px 0;
@@ -23,8 +24,8 @@ a {
 .nav-container {
     margin: 0 auto;
     position: relative;
-    width: 80%;
-    max-width: 710px;
+    width: calc(100% - 40px);
+    max-width: 1200px;
 }
 
 .nav-container ul{
@@ -49,4 +50,43 @@ a {
 .column-2{
     grid-template-columns: 1fr 1fr;
     gap: 5%;
+}
+
+/* post */
+.post .post-header{
+    padding:1.6em 0 1.4em 0;
+    border-bottom: 1px solid #ddd;
+    border-top: 4px solid;
+}
+.post .post-content{
+    padding: 5.4em 0;
+}
+.list-wrap{
+    position: relative;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding-bottom: 4rem;
+    border-bottom: #EBF2F6 1px solid;
+    word-break: break-word;
+    hyphens: auto;
+}
+.list-wrap ul .d-grid{
+    gap:48px;
+    grid-template-columns: 350px 1fr;
+
+}
+.list-wrap li{
+    padding: 1em 0;
+}
+.list-wrap .thumb{
+    width:350px;
+    height: 220px;
+    overflow: hidden;
+}
+.list-wrap .info{
+    padding: 1em 0;
+}
+.list-wrap .info .tlt{
+    font-size: 2.4rem;
 }

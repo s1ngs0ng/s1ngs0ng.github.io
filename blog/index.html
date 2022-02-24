@@ -3,10 +3,16 @@ layout: default
 category: blog
 ---
 
+<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">Blog</h1>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
 
-<main id="content" class="content" role="blog">
-
-
+<div id="content" class="list-wrap content" role="blog">
     <div class="extra-pagination inner">
         {% include pagination.html %}
     </div>
@@ -14,8 +20,8 @@ category: blog
     {% for category in site.categories %}
     {% if page.category == category.first %}
     {% for post in category[1] %}
-    <article class="post">
-        <header class="post-header">
+    <article class="">
+        <!-- <header class="post-header">
             <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         </header>
         <section class="post-excerpt">
@@ -25,7 +31,27 @@ category: blog
             <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
                 {{ post.date | date_to_string }}
             </time> 
-        </footer>
+        </footer> -->
+        <ul>
+            <li>
+                <div class="d-grid">
+                    <div class="thumb">
+                        <img src="https://images.unsplash.com/photo-1607707972895-7f994d8c2f3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1036&q=80"/>
+                    </div>
+                    <div class="info">
+                        <h3 class="tlt"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                        <section class="post-excerpt">
+                            {{ post.excerpt }} <a class="read-more" href="{{ post.url | relative_url }}">&raquo;</a>
+                        </section>
+                        <footer class="post-meta">  
+                            <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
+                                {{ post.date | date_to_string }}
+                            </time> 
+                        </footer>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </article>
     {% endfor %}
     {% endif %}
@@ -33,7 +59,7 @@ category: blog
 
     {% include pagination.html %}
 
-</main>
+</div>
 
 
       
